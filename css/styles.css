@@ -5,17 +5,27 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 li {
 	list-style-type: none;
 }
+
+/**********/
+/* HEADER */
+/**********/
+
 header {
 	height: 67px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	padding: 25px;
+	padding: 0px 25px;
 }
 #header-left {
 	display: flex;
@@ -23,6 +33,7 @@ header {
 	gap: 15px;
 }
 #burger-menu {
+	display: block;
 	width: 16px;
 	height: 15px;
 }
@@ -49,4 +60,27 @@ nav {
 #avatar {
 	width: 25px;
 	height: 25px;
+}
+
+@media only screen and (min-width: 950px) {
+	body {
+		padding: 0 10.75vw;
+		max-width: 1440px;
+		width: 100%;
+	}
+	header {
+		padding: 0;
+		height: 110px;
+	}
+	#burger-menu {
+		display: none;
+	}
+	nav {
+		display: flex;
+		margin-left: 50px;
+		gap: 32px;
+	}
+	#carousel img {
+		width: 375px;
+	}
 }
