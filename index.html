@@ -11,6 +11,7 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
+		<link rel="stylesheet" href="css/styles.css" />
 
 		<title>Frontend Mentor | E-commerce product page</title>
 
@@ -28,6 +29,7 @@
 	<body>
 		<header>
 			<div id="header-left">
+				<img src="images/icon-menu.svg" />
 				<h1>Sneakers</h1>
 				<nav>
 					<li>Collections</li>
@@ -38,12 +40,19 @@
 				</nav>
 			</div>
 			<div id="header-right">
-				<li>Cart</li>
-				<li>PP</li>
+				<li><img src="images/icon-cart.svg" /></li>
+				<li><img src="images/image-avatar.png" /></li>
 			</div>
 		</header>
 		<main>
-			<section id="carousel"></section>
+			<section id="carousel">
+				<img src="images/image-product-1.jpg" />
+				<img src="images/image-product-2.jpg" />
+				<img src="images/image-product-3.jpg" />
+				<img src="images/image-product-4.jpg" />
+				<img src="images/icon-previous.svg" />
+				<img src="images/icon-next.svg" />
+			</section>
 			<article id="description">
 				<div id="item-info">
 					<h3>Sneaker Company</h3>
@@ -63,12 +72,12 @@
 				</div>
 				<div id="item-add-cart">
 					<div id="item-number">
-						<p id="item-minus">-</p>
+						<img src="images/icon-minus.svg" id="item-minus" />
 						<p id="item-counter">0</p>
-						<p id="item-plus"></p>
+						<img src="images/icon-plus.svg" id="item-plus" />
 					</div>
 					<div id="add-to-cart-button">
-						<img />
+						<img src="images/icon-cart.svg" />
 						<p id="add-to-cart-text">Add to cart</p>
 					</div>
 				</div>
