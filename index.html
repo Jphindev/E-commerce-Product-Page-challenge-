@@ -47,26 +47,72 @@
 		<main>
 			<section id="carousel-container">
 				<div id="carousel">
-					<img id="previous" src="images/icon-previous.svg" />
-					<img id="next" src="images/icon-next.svg" />
-					<div id="pictures">
-						<img id="product-1" src="images/image-product-1.jpg" />
-						<img id="product-2" src="images/image-product-2.jpg" />
-						<img id="product-3" src="images/image-product-3.jpg" />
-						<img id="product-4" src="images/image-product-4.jpg" />
+					<div id="pictures-container">
+						<div class="pictures" id="picture-1">
+							<a class="previous" href="#picture-4">
+								<img src="images/icon-previous.svg" />
+							</a>
+							<a class="next" href="#picture-2">
+								<img src="images/icon-next.svg" />
+							</a>
+							<img
+								class="slides"
+								id="slide-1"
+								src="images/image-product-1.jpg"
+							/>
+						</div>
+						<div class="pictures" id="picture-2">
+							<a class="previous" href="#picture-1">
+								<img src="images/icon-previous.svg" />
+							</a>
+							<a class="next" href="#picture-3">
+								<img src="images/icon-next.svg" />
+							</a>
+							<img
+								class="slides"
+								id="slide-2"
+								src="images/image-product-2.jpg"
+							/>
+						</div>
+						<div class="pictures" id="picture-3">
+							<a class="previous" href="#picture-2">
+								<img src="images/icon-previous.svg" />
+							</a>
+							<a class="next" href="#picture-4">
+								<img src="images/icon-next.svg" />
+							</a>
+							<img
+								class="slides"
+								id="slide-3"
+								src="images/image-product-3.jpg"
+							/>
+						</div>
+						<div class="pictures" id="picture-4">
+							<a class="previous" href="#picture-3">
+								<img src="images/icon-previous.svg" />
+							</a>
+							<a class="next" href="#picture-1">
+								<img src="images/icon-next.svg" />
+							</a>
+							<img
+								class="slides"
+								id="slide-4"
+								src="images/image-product-4.jpg"
+							/>
+						</div>
 					</div>
 				</div>
 				<div id="thumbnails">
-					<a href="#product-1">
+					<a href="#picture-1">
 						<img src="images/image-product-1-thumbnail.jpg" />
 					</a>
-					<a href="#product-2"
+					<a href="#picture-2"
 						><img src="images/image-product-2-thumbnail.jpg"
 					/></a>
-					<a href="#product-3"
+					<a href="#picture-3"
 						><img src="images/image-product-3-thumbnail.jpg"
 					/></a>
-					<a href="#product-4"
+					<a href="#picture-4"
 						><img src="images/image-product-4-thumbnail.jpg"
 					/></a>
 				</div>
