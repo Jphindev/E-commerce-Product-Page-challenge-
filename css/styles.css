@@ -31,7 +31,7 @@ header {
 #header-left {
 	display: flex;
 	align-items: center;
-	gap: 15px;
+	gap: 1vw;
 }
 #burger-menu {
 	display: block;
@@ -80,11 +80,14 @@ nav {
 #pictures {
 	display: flex;
 	flex-wrap: nowrap;
+	scroll-behavior: smooth;
+	overflow-x: auto;
+	height: 100%;
 }
 
-#carousel img {
+#pictures img {
 	width: 375px;
-	height: 290px;
+
 	object-fit: cover;
 	flex: 0 0 100%;
 }
@@ -118,7 +121,7 @@ nav {
 	display: none;
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 750px) {
 	body {
 		padding: 0 10.75vw;
 		max-width: 1440px;
@@ -133,18 +136,19 @@ nav {
 	}
 	nav {
 		display: flex;
-		margin-left: 50px;
-		gap: 32px;
+		margin-left: 3vw;
+		gap: 2vw;
 	}
 	main {
 		display: flex;
 		flex-direction: row;
 	}
 	#carousel-container {
-		width: 450px;
+		width: 445px;
 	}
 	#carousel {
 		border-radius: 10%;
+		height: 445px;
 	}
 	#thumbnails {
 		display: flex;
