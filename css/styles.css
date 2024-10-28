@@ -219,6 +219,7 @@ nav {
 	align-items: center;
 	font-weight: 700;
 	width: 100%;
+	max-width: 270px;
 	background-color: var(--light-grayish-blue);
 	padding: 0 30px;
 	height: 55px;
@@ -250,16 +251,14 @@ nav {
 
 /******************************************/
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 800px) {
 	body {
-		padding: 0 10.75vw;
-		max-width: 1440px;
 		width: 100%;
 	}
 	main {
 		display: flex;
 		flex-direction: row;
-		gap: 8.68vw;
+		justify-content: space-between;
 	}
 
 	/**********/
@@ -270,18 +269,18 @@ nav {
 		padding: 0;
 		height: 110px;
 		border-bottom: 1px solid var(--grayish-blue);
-		margin-bottom: 6.25vw;
+		margin-bottom: 90px;
 	}
 	header-left {
-		gap: 1vw;
+		gap: 15px;
 	}
 	#burger-menu {
 		display: none;
 	}
 	nav {
 		display: flex;
-		margin-left: 3vw;
-		gap: 2vw;
+		margin-left: 40px;
+		gap: 25px;
 		color: var(--dark-grayish-blue);
 	}
 
@@ -291,7 +290,7 @@ nav {
 
 	#carousel-container {
 		width: 445px;
-		margin-left: 3.125vw;
+		margin-left: 45px;
 	}
 	#carousel {
 		border-radius: 5%;
@@ -316,6 +315,11 @@ nav {
 	/* DESCRIPTION */
 	/***************/
 
+	#description {
+		margin: 45px;
+		max-width: 445px;
+	}
+
 	#item-name {
 		font-size: 40px;
 	}
@@ -326,14 +330,26 @@ nav {
 		gap: 10px;
 	}
 	#item-add-cart {
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: flex-start;
+		align-items: flex-start;
 	}
-	#item-number {
-		width: 160px;
-	}
+
 	#add-to-cart-button {
 		width: 270px;
 		box-shadow: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		padding: 0 155px;
+		max-width: 1440px;
+	}
+	#item-add-cart {
+		flex-direction: row;
+	}
+	#item-number {
+		width: 160px;
 	}
 }
